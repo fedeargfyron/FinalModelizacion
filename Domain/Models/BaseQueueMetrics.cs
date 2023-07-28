@@ -33,6 +33,7 @@ public abstract class BaseQueueMetrics
     protected double CalculatePn() 
         => NUnits == 0 ? 0 : (1 - P) * Math.Pow(P, NUnits);
 
+
     private void SetInitialMetrics(BaseQueueInputsDto inputs)
     {
         TimeUnit = inputs.ArriveTimeUnit;
