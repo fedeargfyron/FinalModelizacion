@@ -1,7 +1,6 @@
 ﻿using Domain.Converters;
 using Domain.Dtos;
 using Domain.Enums;
-using System.Reflection.Metadata.Ecma335;
 
 namespace Domain.Models;
 
@@ -32,7 +31,6 @@ public abstract class BaseQueueMetrics
 
     protected double CalculatePn() 
         => NUnits == 0 ? 0 : (1 - P) * Math.Pow(P, NUnits);
-
 
     private void SetInitialMetrics(BaseQueueInputsDto inputs)
     {
